@@ -1,0 +1,34 @@
+{
+  "name": "css-base",
+  "version": "1.0.0",
+  "description": "my css-base project",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://itmajun@github.com/itmajun/css-base.git"
+  },
+  "keywords": [
+    "css-base"
+  ],
+  "author": "itmajun@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itmajun/css-base/issues"
+  },
+  "homepage": "https://github.com/itmajun/css-base#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {}
+}
