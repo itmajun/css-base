@@ -103,7 +103,8 @@ Modifiler: class="block block--size-big"
 ---
 
 h5页面将如何进行编写呢? 自适应? rem? @media 是否有公共的组件样式呢?
-这里存在众多的[手机](https://material.io/devices/), 如何实现的这么多的匹配呢
+这里存在众多的[手机](https://material.io/devices/), 如何实现的这么多的匹配呢. 
+通过查询目前存在多种方案1. 通过rem 2. 通过viewport 单位
 
 
 vue 关注度比较高的mobile ui 有 mint-ui .我们来看下,他是如何实现手机布局要求的.
@@ -118,7 +119,7 @@ but....but... 看了这么多东西了,实在是不想再一个一个学习轮�
 这样看来, 淘宝使用的是rem布局,mint-ui 组件是根据不同的media进行了宽高的百分比转换.
 之前接触过gulp. 并且比较有好感, 猜想为什么css 打包饿了么都用gulp呢. 也有这种原因吧.只需要简单使用几个插件就完成了css的打包
 
-* 如何gulp打包时候把normalize.css 打进去呢?
+
 
 # 整理
 ---
@@ -129,8 +130,10 @@ css的开发中,发现有两种使用场景, 第一局部作用域, 一般编写
 
 
 
-
+* [amfe-flexible](https://github.com/amfe/lib-flexible)
 * [h5淘宝](https://github.com/amfe/article/issues/17)
+* [vue-viewport](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
+* viewport-units-buggyfill: 适配,不支持viewport单位的进行hack方式的修复
 
 
 
