@@ -129,6 +129,19 @@ css的开发中,发现有两种使用场景, 第一局部作用域, 一般编写
 完整的css 供全局使用.
 
 
+css 相关的项目目前大部分都使用了postcss. 其实，我并不想从零开始，所以对于我来说，我需要达到的目的是
+1. 全局样式 ，是否有模板？
+2. 局部样式 ，采用那些标准？
+3. 配合vue，weex，我将如何在项目中使用呢？
+针对上面三个问题，现在归纳下
+
+1. 使用normalize.css 进行样式的reset
+2. 组件样式进行打包，一起引用
+3. 局部样式采用bem 命名规范， 可以通过postcss插件进行实现
+4. 全局建议使用sass语法进行编写
+5. 打包使用 cssnano
+6. 1px 使用 postcss-write-svg
+7. 自适应方案使用viewpoint
 
 * [amfe-flexible](https://github.com/amfe/lib-flexible)
 * [h5淘宝](https://github.com/amfe/article/issues/17)
